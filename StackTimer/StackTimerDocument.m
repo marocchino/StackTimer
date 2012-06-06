@@ -9,7 +9,6 @@
 #import "StackTimerDocument.h"
 
 @implementation StackTimerDocument
-@synthesize detailMenu;
 @synthesize formPopover;
 @synthesize textField;
 @synthesize input;
@@ -31,9 +30,10 @@
     now = [NSDate date];
     [textField setObjectValue:now];
     statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
-    [statusItem setMenu:detailMenu];
     [statusItem setTitle:@"Status"];
     [statusItem setHighlightMode:YES];
+    [statusItem setTarget:self];
+    [statusItem setAction:@selector(showMenulet:)];
 }
 
 - (NSString *)windowNibName

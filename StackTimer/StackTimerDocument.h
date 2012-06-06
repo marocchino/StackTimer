@@ -14,7 +14,6 @@
     NSStatusItem* statusItem;
 }
 @property (strong) IBOutlet NSPopover *formPopover;
-@property (strong) IBOutlet NSMenu *detailMenu;
 @property (weak) IBOutlet NSTextFieldCell *textField;
 @property (weak) IBOutlet NSTextField *input;
 @property (weak) IBOutlet NSTextField *output;
