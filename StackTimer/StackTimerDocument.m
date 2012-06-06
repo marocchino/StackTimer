@@ -30,9 +30,7 @@
     NSDate *now;
     now = [NSDate date];
     [textField setObjectValue:now];
-    
-    CGFloat thickness = [[NSStatusBar systemStatusBar] thickness];
-    statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:thickness];
+    statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     [statusItem setMenu:detailMenu];
     [statusItem setTitle:@"Status"];
     [statusItem setHighlightMode:YES];
