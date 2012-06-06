@@ -12,17 +12,14 @@
 {
     NSSpeechSynthesizer *_speechSynth;
     NSStatusItem* statusItem;
+    BOOL isMenuletVisible;
 }
 @property (strong) IBOutlet NSPopover *formPopover;
-@property (weak) IBOutlet NSTextFieldCell *textField;
-@property (weak) IBOutlet NSTextField *input;
-@property (weak) IBOutlet NSTextField *output;
+@property (weak) IBOutlet NSTextField *currentWorkField;
+@property (weak) IBOutlet NSLayoutConstraint *currentWorkLabel;
 
-- (IBAction)seed:(id)sender;
-- (IBAction)generate:(id)sender;
 - (IBAction)speak:(id)sender;
 - (IBAction)stopSpeak:(id)sender;
-- (IBAction)countInput:(id)sender;
 - (IBAction)showMenulet:(id)sender;
 
 

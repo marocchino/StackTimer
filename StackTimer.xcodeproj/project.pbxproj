@@ -19,6 +19,7 @@
 		26E8FF37157CF2DF007089DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26E8FF35157CF2DF007089DB /* InfoPlist.strings */; };
 		26E8FF3A157CF2DF007089DB /* StackTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E8FF39157CF2DF007089DB /* StackTimerTests.m */; };
 		26E90F41157FCB2C003DEE36 /* stackTimer.bmml in Resources */ = {isa = PBXBuildFile; fileRef = 26E90F40157FCB2C003DEE36 /* stackTimer.bmml */; };
+		26E90F46157FCF30003DEE36 /* NSWindow+canBecomeKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E90F45157FCF30003DEE36 /* NSWindow+canBecomeKeyWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		26E8FF38157CF2DF007089DB /* StackTimerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackTimerTests.h; sourceTree = "<group>"; };
 		26E8FF39157CF2DF007089DB /* StackTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackTimerTests.m; sourceTree = "<group>"; };
 		26E90F40157FCB2C003DEE36 /* stackTimer.bmml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stackTimer.bmml; sourceTree = "<group>"; };
+		26E90F44157FCF30003DEE36 /* NSWindow+canBecomeKeyWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSWindow+canBecomeKeyWindow.h"; path = "../NSWindow+canBecomeKeyWindow.h"; sourceTree = "<group>"; };
+		26E90F45157FCF30003DEE36 /* NSWindow+canBecomeKeyWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSWindow+canBecomeKeyWindow.m"; path = "../NSWindow+canBecomeKeyWindow.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 		26E8FF0F157CF2DF007089DB /* StackTimer */ = {
 			isa = PBXGroup;
 			children = (
+				26E90F44157FCF30003DEE36 /* NSWindow+canBecomeKeyWindow.h */,
+				26E90F45157FCF30003DEE36 /* NSWindow+canBecomeKeyWindow.m */,
 				26E8FF1B157CF2DF007089DB /* StackTimerDocument.h */,
 				26E8FF1C157CF2DF007089DB /* StackTimerDocument.m */,
 				26E8FF1E157CF2DF007089DB /* StackTimerDocument.xib */,
@@ -271,6 +276,7 @@
 				26E8FF16157CF2DF007089DB /* main.m in Sources */,
 				26E8FF1D157CF2DF007089DB /* StackTimerDocument.m in Sources */,
 				26E8FF26157CF2DF007089DB /* StackTimerDocument.xcdatamodeld in Sources */,
+				26E90F46157FCF30003DEE36 /* NSWindow+canBecomeKeyWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

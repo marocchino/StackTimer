@@ -10,9 +10,8 @@
 
 @implementation StackTimerDocument
 @synthesize formPopover;
-@synthesize textField;
-@synthesize input;
-@synthesize output;
+@synthesize currentWorkField;
+@synthesize currentWorkLabel;
 - (id)init
 {
     self = [super init];
@@ -26,9 +25,7 @@
 }
 - (void)awakeFromNib
 {
-    NSDate *now;
-    now = [NSDate date];
-    [textField setObjectValue:now];
+    isMenuletVisible = NO;
     statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     [statusItem setTitle:@"Status"];
     [statusItem setHighlightMode:YES];
@@ -59,26 +56,12 @@
     NSLog(@"finishedSpeaking = %d", finishedSpeaking);
 }
 
-- (IBAction)seed:(id)sender {
-    // Generate a number between 1 and 100 inclusive
-    int generated;
-    generated = (int)(random() % 100) + 1;
-    NSLog(@"generated = %d", generated);
-    // Ask the text field to change what it is displaying
-    [textField setIntValue:generated];
-}
-
-- (IBAction)generate:(id)sender {
-    // Seed the random number generator with the time
-    srandom((unsigned)time(NULL));
-    [textField setStringValue:@"Generator seeded"];
-}
 
 - (IBAction)speak:(id)sender {
-    NSString *string = [input stringValue];
+    NSString *string = [currentWorkField stringValue];
     // Is the string zero-length?
     if ([string length] == 0) {
-        NSLog(@"string from %@ is of zero-length", textField);
+        NSLog(@"string from %@ is of zero-length", currentWorkField);
         return; }
     [_speechSynth startSpeakingString:string];
     NSLog(@"Have started to say: %@", string);
@@ -88,16 +71,13 @@
     [_speechSynth stopSpeaking];
 }
 
-- (IBAction)countInput:(id)sender {
-    NSString *string = [input stringValue];
-    if ([string length] == 0) {
-        [output setStringValue:@"???"];
-    } else {
-        [output setStringValue:[NSString stringWithFormat:@"'%@'has %d char", string, [string length]]];
-    }
-}
 
 - (IBAction)showMenulet:(id)sender {
-    [formPopover showRelativeToRect:[sender bounds] ofView:sender preferredEdge:NSMaxYEdge];
+    isMenuletVisible = !isMenuletVisible;
+    if (isMenuletVisible) {
+        [formPopover showRelativeToRect:[sender bounds] ofView:sender preferredEdge:NSMaxYEdge];
+    } else {
+        [formPopover close];
+    };
 }
 @end
