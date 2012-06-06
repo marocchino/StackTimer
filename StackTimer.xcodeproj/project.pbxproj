@@ -13,7 +13,6 @@
 		26E8FF1A157CF2DF007089DB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 26E8FF18157CF2DF007089DB /* Credits.rtf */; };
 		26E8FF1D157CF2DF007089DB /* StackTimerDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E8FF1C157CF2DF007089DB /* StackTimerDocument.m */; };
 		26E8FF20157CF2DF007089DB /* StackTimerDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26E8FF1E157CF2DF007089DB /* StackTimerDocument.xib */; };
-		26E8FF23157CF2DF007089DB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26E8FF21157CF2DF007089DB /* MainMenu.xib */; };
 		26E8FF26157CF2DF007089DB /* StackTimerDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 26E8FF24157CF2DF007089DB /* StackTimerDocument.xcdatamodeld */; };
 		26E8FF2E157CF2DF007089DB /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E8FF2D157CF2DF007089DB /* SenTestingKit.framework */; };
 		26E8FF2F157CF2DF007089DB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E8FF09157CF2DF007089DB /* Cocoa.framework */; };
@@ -37,21 +36,20 @@
 		26E8FF0C157CF2DF007089DB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		26E8FF0D157CF2DF007089DB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		26E8FF0E157CF2DF007089DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		26E8FF11157CF2DF007089DB /* StackTimer-Info.plist */ = {isa = PBXFileReference; path = "StackTimer-Info.plist"; sourceTree = "<group>"; };
+		26E8FF11157CF2DF007089DB /* StackTimer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StackTimer-Info.plist"; sourceTree = "<group>"; };
 		26E8FF13157CF2DF007089DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		26E8FF15157CF2DF007089DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		26E8FF17157CF2DF007089DB /* StackTimer-Prefix.pch */ = {isa = PBXFileReference; path = "StackTimer-Prefix.pch"; sourceTree = "<group>"; };
+		26E8FF17157CF2DF007089DB /* StackTimer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StackTimer-Prefix.pch"; sourceTree = "<group>"; };
 		26E8FF19157CF2DF007089DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		26E8FF1B157CF2DF007089DB /* StackTimerDocument.h */ = {isa = PBXFileReference; path = StackTimerDocument.h; sourceTree = "<group>"; };
+		26E8FF1B157CF2DF007089DB /* StackTimerDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackTimerDocument.h; sourceTree = "<group>"; };
 		26E8FF1C157CF2DF007089DB /* StackTimerDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackTimerDocument.m; sourceTree = "<group>"; };
 		26E8FF1F157CF2DF007089DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/StackTimerDocument.xib; sourceTree = "<group>"; };
-		26E8FF22157CF2DF007089DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		26E8FF25157CF2DF007089DB /* StackTimerDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StackTimerDocument.xcdatamodel; sourceTree = "<group>"; };
 		26E8FF2C157CF2DF007089DB /* StackTimerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackTimerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26E8FF2D157CF2DF007089DB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		26E8FF34157CF2DF007089DB /* StackTimerTests-Info.plist */ = {isa = PBXFileReference; path = "StackTimerTests-Info.plist"; sourceTree = "<group>"; };
+		26E8FF34157CF2DF007089DB /* StackTimerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StackTimerTests-Info.plist"; sourceTree = "<group>"; };
 		26E8FF36157CF2DF007089DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		26E8FF38157CF2DF007089DB /* StackTimerTests.h */ = {isa = PBXFileReference; path = StackTimerTests.h; sourceTree = "<group>"; };
+		26E8FF38157CF2DF007089DB /* StackTimerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackTimerTests.h; sourceTree = "<group>"; };
 		26E8FF39157CF2DF007089DB /* StackTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackTimerTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,7 +119,6 @@
 				26E8FF1B157CF2DF007089DB /* StackTimerDocument.h */,
 				26E8FF1C157CF2DF007089DB /* StackTimerDocument.m */,
 				26E8FF1E157CF2DF007089DB /* StackTimerDocument.xib */,
-				26E8FF21157CF2DF007089DB /* MainMenu.xib */,
 				26E8FF24157CF2DF007089DB /* StackTimerDocument.xcdatamodeld */,
 				26E8FF10157CF2DF007089DB /* Supporting Files */,
 			);
@@ -233,7 +230,6 @@
 				26E8FF14157CF2DF007089DB /* InfoPlist.strings in Resources */,
 				26E8FF1A157CF2DF007089DB /* Credits.rtf in Resources */,
 				26E8FF20157CF2DF007089DB /* StackTimerDocument.xib in Resources */,
-				26E8FF23157CF2DF007089DB /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,14 +311,6 @@
 				26E8FF1F157CF2DF007089DB /* en */,
 			);
 			name = StackTimerDocument.xib;
-			sourceTree = "<group>";
-		};
-		26E8FF21157CF2DF007089DB /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				26E8FF22157CF2DF007089DB /* en */,
-			);
-			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 		26E8FF35157CF2DF007089DB /* InfoPlist.strings */ = {
@@ -452,6 +440,7 @@
 				26E8FF3F157CF2DF007089DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		26E8FF40157CF2DF007089DB /* Build configuration list for PBXNativeTarget "StackTimerTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +449,7 @@
 				26E8FF42157CF2DF007089DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
