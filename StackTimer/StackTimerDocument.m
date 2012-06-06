@@ -50,12 +50,6 @@
 {
     return YES;
 }
-- (void)speechSynthesizer:(NSSpeechSynthesizer *)sender
-        didFinishSpeaking:(BOOL)finishedSpeaking
-{
-    NSLog(@"finishedSpeaking = %d", finishedSpeaking);
-}
-
 
 - (IBAction)speak:(id)sender {
     NSString *string = [currentWorkField stringValue];
@@ -64,7 +58,6 @@
         NSLog(@"string from %@ is of zero-length", currentWorkField);
         return; }
     [_speechSynth startSpeakingString:string];
-    NSLog(@"Have started to say: %@", string);
 }
 
 - (IBAction)stopSpeak:(id)sender {
