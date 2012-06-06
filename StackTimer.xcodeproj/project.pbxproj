@@ -18,6 +18,7 @@
 		26E8FF2F157CF2DF007089DB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E8FF09157CF2DF007089DB /* Cocoa.framework */; };
 		26E8FF37157CF2DF007089DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26E8FF35157CF2DF007089DB /* InfoPlist.strings */; };
 		26E8FF3A157CF2DF007089DB /* StackTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E8FF39157CF2DF007089DB /* StackTimerTests.m */; };
+		26E90F41157FCB2C003DEE36 /* stackTimer.bmml in Resources */ = {isa = PBXBuildFile; fileRef = 26E90F40157FCB2C003DEE36 /* stackTimer.bmml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		26E8FF36157CF2DF007089DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		26E8FF38157CF2DF007089DB /* StackTimerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackTimerTests.h; sourceTree = "<group>"; };
 		26E8FF39157CF2DF007089DB /* StackTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackTimerTests.m; sourceTree = "<group>"; };
+		26E90F40157FCB2C003DEE36 /* stackTimer.bmml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stackTimer.bmml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 		26E8FF10157CF2DF007089DB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				26E90F40157FCB2C003DEE36 /* stackTimer.bmml */,
 				26E8FF11157CF2DF007089DB /* StackTimer-Info.plist */,
 				26E8FF12157CF2DF007089DB /* InfoPlist.strings */,
 				26E8FF15157CF2DF007089DB /* main.m */,
@@ -230,6 +233,7 @@
 				26E8FF14157CF2DF007089DB /* InfoPlist.strings in Resources */,
 				26E8FF1A157CF2DF007089DB /* Credits.rtf in Resources */,
 				26E8FF20157CF2DF007089DB /* StackTimerDocument.xib in Resources */,
+				26E90F41157FCB2C003DEE36 /* stackTimer.bmml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
