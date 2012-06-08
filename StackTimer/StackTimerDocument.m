@@ -7,6 +7,7 @@
 //
 
 #import "StackTimerDocument.h"
+#import "Task.h"
 
 @implementation StackTimerDocument
 @synthesize formPopover;
@@ -31,6 +32,23 @@
     [statusItem setHighlightMode:YES];
     [statusItem setTarget:self];
     [statusItem setAction:@selector(showMenulet:)];
+    Task *task = (Task*) [NSEntityDescription insertNewObjectForEntityForName:@"Task" inManagedObjectContext:[self managedObjectContext]];
+    
+    task.title = @"Hello World";
+    task.startedAt = [NSDate date];
+    
+    NSError *error;
+    if (![[self managedObjectContext] save:&error]) {
+        NSLog([error localizedDescription]);
+    } else {
+        NSLog(@"success");
+    }
+    NSFetchRequest* fetchRequest = [NSFetchRequest new];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Task" inManagedObjectContext:[self managedObjectContext]];
+    [fetchRequest setEntity:entity];
+    
+    NSMutableArray *entities = [[[self managedObjectContext] executeFetchRequest:fetchRequest error:&error] mutableCopy];
+    NSLog(@"%@", entities);
 }
 
 - (NSString *)windowNibName

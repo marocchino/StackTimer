@@ -18,5 +18,6 @@
 @dynamic status;
 @dynamic depth;
 @dynamic parent;
+@dynamic children;
 
 @end

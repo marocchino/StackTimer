@@ -57,14 +57,13 @@
 						<string key="NSFrame">{{127, 34}, {48, 19}}</string>
 						<reference key="NSSuperview" ref="2804273"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="NSEnabled">YES</bool>
 						<object class="NSButtonCell" key="NSCell" id="91161774">
 							<int key="NSCellFlags">-2080244224</int>
 							<int key="NSCellFlags2">134217728</int>
 							<string key="NSContents">speak</string>
-							<object class="NSFont" key="NSSupport" id="803259141">
+							<object class="NSFont" key="NSSupport">
 								<string key="NSName">LucidaGrande</string>
 								<double key="NSSize">12</double>
 								<int key="NSfFlags">16</int>
@@ -101,13 +100,8 @@
 							<reference key="NSControlView" ref="102325120"/>
 							<bool key="NSDrawsBackground">YES</bool>
 							<object class="NSColor" key="NSBackgroundColor">
-								<int key="NSColorSpace">6</int>
-								<string key="NSCatalogName">System</string>
-								<string key="NSColorName">textBackgroundColor</string>
-								<object class="NSColor" key="NSColor">
-									<int key="NSColorSpace">3</int>
-									<bytes key="NSWhite">MQA</bytes>
-								</object>
+								<int key="NSColorSpace">1</int>
+								<bytes key="NSRGB">MSAwLjk4NTE1ODMzNDggMC43MDU1MDk2MTg3AA</bytes>
 							</object>
 							<object class="NSColor" key="NSTextColor">
 								<int key="NSColorSpace">6</int>
@@ -160,28 +154,6 @@
 				<reference key="NSNextKeyView" ref="299380275"/>
 				<string key="NSReuseIdentifierKey">_NS:9</string>
 				<string key="NSClassName">NSView</string>
-			</object>
-			<object class="NSButton" id="42049701">
-				<reference key="NSNextResponder"/>
-				<int key="NSvFlags">268</int>
-				<string key="NSFrameSize">{122, 19}</string>
-				<reference key="NSSuperview"/>
-				<string key="NSReuseIdentifierKey">_NS:9</string>
-				<bool key="NSEnabled">YES</bool>
-				<object class="NSButtonCell" key="NSCell" id="680546864">
-					<int key="NSCellFlags">-2080244224</int>
-					<int key="NSCellFlags2">134217728</int>
-					<string key="NSContents">Round Rect Button</string>
-					<reference key="NSSupport" ref="803259141"/>
-					<string key="NSCellIdentifier">_NS:9</string>
-					<reference key="NSControlView" ref="42049701"/>
-					<int key="NSButtonFlags">-2038152961</int>
-					<int key="NSButtonFlags2">164</int>
-					<string key="NSAlternateContents"/>
-					<string key="NSKeyEquivalent"/>
-					<int key="NSPeriodicDelay">400</int>
-					<int key="NSPeriodicInterval">75</int>
-				</object>
 			</object>
 		</array>
 		<object class="IBObjectContainer" key="IBDocument.Objects">
@@ -454,19 +426,6 @@
 						<reference key="parent" ref="2804273"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">100187</int>
-						<reference key="object" ref="42049701"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="680546864"/>
-						</array>
-						<reference key="parent" ref="0"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">100188</int>
-						<reference key="object" ref="680546864"/>
-						<reference key="parent" ref="42049701"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">100189</int>
 						<reference key="object" ref="369254853"/>
 						<array class="NSMutableArray" key="children">
@@ -520,8 +479,6 @@
 				<string key="100181.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="100182.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="100185.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100187.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="100188.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<boolean value="NO" key="100189.IBNSViewMetadataTranslatesAutoresizingMaskIntoConstraints"/>
 				<string key="100189.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="100190.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -548,26 +505,11 @@
 					<string key="className">StackTimerDocument</string>
 					<string key="superclassName">NSPersistentDocument</string>
 					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="countInput:">id</string>
-						<string key="generate:">id</string>
-						<string key="seed:">id</string>
 						<string key="showMenulet:">id</string>
 						<string key="speak:">id</string>
 						<string key="stopSpeak:">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="countInput:">
-							<string key="name">countInput:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="generate:">
-							<string key="name">generate:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="seed:">
-							<string key="name">seed:</string>
-							<string key="candidateClassName">id</string>
-						</object>
 						<object class="IBActionInfo" key="showMenulet:">
 							<string key="name">showMenulet:</string>
 							<string key="candidateClassName">id</string>
