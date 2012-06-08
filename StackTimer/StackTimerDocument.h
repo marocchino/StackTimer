@@ -18,9 +18,10 @@
 @property (weak) IBOutlet NSTextField *currentWorkField;
 @property (weak) IBOutlet NSLayoutConstraint *currentWorkLabel;
 
+- (IBAction)createTask:(id)sender;
+- (void) initMenulet;
 - (IBAction)speak:(id)sender;
 - (IBAction)stopSpeak:(id)sender;
 - (IBAction)showMenulet:(id)sender;
-
 
 @end

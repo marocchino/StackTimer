@@ -26,23 +26,9 @@
 }
 - (void)awakeFromNib
 {
-    isMenuletVisible = NO;
-    statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
-    [statusItem setTitle:@"Status"];
-    [statusItem setHighlightMode:YES];
-    [statusItem setTarget:self];
-    [statusItem setAction:@selector(showMenulet:)];
-    Task *task = (Task*) [NSEntityDescription insertNewObjectForEntityForName:@"Task" inManagedObjectContext:[self managedObjectContext]];
-    
-    task.title = @"Hello World";
-    task.startedAt = [NSDate date];
+    [self initMenulet];
     
     NSError *error;
-    if (![[self managedObjectContext] save:&error]) {
-        NSLog([error localizedDescription]);
-    } else {
-        NSLog(@"success");
-    }
     NSFetchRequest* fetchRequest = [NSFetchRequest new];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Task" inManagedObjectContext:[self managedObjectContext]];
     [fetchRequest setEntity:entity];
@@ -67,6 +53,30 @@
 + (BOOL)autosavesInPlace
 {
     return YES;
+}
+
+- (IBAction)createTask:(id)sender {
+    NSString *title = [currentWorkField stringValue];
+    NSError *error;
+    Task *task = (Task*) [NSEntityDescription insertNewObjectForEntityForName:@"Task" inManagedObjectContext:[self managedObjectContext]];
+    
+    task.title = title;
+    task.startedAt = [NSDate date];
+    
+    if (![[self managedObjectContext] save:&error]) {
+        NSLog(@"%@",[error localizedDescription]);
+    } else {
+        NSLog(@"success");
+    }
+}
+
+- (void) initMenulet {
+    isMenuletVisible = NO;
+    statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    [statusItem setTitle:@"Status"];
+    [statusItem setHighlightMode:YES];
+    [statusItem setTarget:self];
+    [statusItem setAction:@selector(showMenulet:)];
 }
 
 - (IBAction)speak:(id)sender {

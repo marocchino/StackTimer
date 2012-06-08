@@ -101,7 +101,5 @@
 	<string>Copyright © 2012 __MyCompanyName__. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
-	<key>NSPersistentStoreTypeKey</key>
-	<string>NSSQLiteStoreType</string>
 </dict>
 </plist>
