@@ -7,164 +7,164 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26E8FF0A157CF2DF007089DB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E8FF09157CF2DF007089DB /* Cocoa.framework */; };
-		26E8FF14157CF2DF007089DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26E8FF12157CF2DF007089DB /* InfoPlist.strings */; };
-		26E8FF16157CF2DF007089DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E8FF15157CF2DF007089DB /* main.m */; };
-		26E8FF1A157CF2DF007089DB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 26E8FF18157CF2DF007089DB /* Credits.rtf */; };
-		26E8FF1D157CF2DF007089DB /* StackTimerDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E8FF1C157CF2DF007089DB /* StackTimerDocument.m */; };
-		26E8FF20157CF2DF007089DB /* StackTimerDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26E8FF1E157CF2DF007089DB /* StackTimerDocument.xib */; };
-		26E8FF26157CF2DF007089DB /* StackTimerDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 26E8FF24157CF2DF007089DB /* StackTimerDocument.xcdatamodeld */; };
-		26E8FF2E157CF2DF007089DB /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E8FF2D157CF2DF007089DB /* SenTestingKit.framework */; };
-		26E8FF2F157CF2DF007089DB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E8FF09157CF2DF007089DB /* Cocoa.framework */; };
-		26E8FF37157CF2DF007089DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26E8FF35157CF2DF007089DB /* InfoPlist.strings */; };
-		26E8FF3A157CF2DF007089DB /* StackTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E8FF39157CF2DF007089DB /* StackTimerTests.m */; };
-		26E90F41157FCB2C003DEE36 /* stackTimer.bmml in Resources */ = {isa = PBXBuildFile; fileRef = 26E90F40157FCB2C003DEE36 /* stackTimer.bmml */; };
-		26E90F46157FCF30003DEE36 /* NSWindow+canBecomeKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E90F45157FCF30003DEE36 /* NSWindow+canBecomeKeyWindow.m */; };
-		26E90F5B1580F83E003DEE36 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E90F5A1580F83E003DEE36 /* Task.m */; };
+		262F71A21582B43200F6F99C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 262F71A11582B43200F6F99C /* Cocoa.framework */; };
+		262F71AC1582B43200F6F99C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 262F71AA1582B43200F6F99C /* InfoPlist.strings */; };
+		262F71AE1582B43200F6F99C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 262F71AD1582B43200F6F99C /* main.m */; };
+		262F71B21582B43200F6F99C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 262F71B01582B43200F6F99C /* Credits.rtf */; };
+		262F71B51582B43200F6F99C /* StackTimerDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 262F71B41582B43200F6F99C /* StackTimerDocument.m */; };
+		262F71B81582B43200F6F99C /* StackTimerDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 262F71B61582B43200F6F99C /* StackTimerDocument.xib */; };
+		262F71BB1582B43200F6F99C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 262F71B91582B43200F6F99C /* MainMenu.xib */; };
+		262F71BE1582B43200F6F99C /* StackTimerDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 262F71BC1582B43200F6F99C /* StackTimerDocument.xcdatamodeld */; };
+		262F71C61582B43200F6F99C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 262F71C51582B43200F6F99C /* SenTestingKit.framework */; };
+		262F71C71582B43200F6F99C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 262F71A11582B43200F6F99C /* Cocoa.framework */; };
+		262F71CF1582B43200F6F99C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 262F71CD1582B43200F6F99C /* InfoPlist.strings */; };
+		262F71D21582B43300F6F99C /* StackTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 262F71D11582B43300F6F99C /* StackTimerTests.m */; };
+		262F71DD1582B50F00F6F99C /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 262F71DC1582B50F00F6F99C /* Task.m */; };
+		262F71E01582B62500F6F99C /* NSWindow+canBecomeKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 262F71DF1582B62500F6F99C /* NSWindow+canBecomeKeyWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		26E8FF30157CF2DF007089DB /* PBXContainerItemProxy */ = {
+		262F71C81582B43200F6F99C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 26E8FEFC157CF2DE007089DB /* Project object */;
+			containerPortal = 262F71941582B43200F6F99C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 26E8FF04157CF2DF007089DB;
+			remoteGlobalIDString = 262F719C1582B43200F6F99C;
 			remoteInfo = StackTimer;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		26E8FF05157CF2DF007089DB /* StackTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		26E8FF09157CF2DF007089DB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		26E8FF0C157CF2DF007089DB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		26E8FF0D157CF2DF007089DB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		26E8FF0E157CF2DF007089DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		26E8FF11157CF2DF007089DB /* StackTimer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StackTimer-Info.plist"; sourceTree = "<group>"; };
-		26E8FF13157CF2DF007089DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		26E8FF15157CF2DF007089DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		26E8FF17157CF2DF007089DB /* StackTimer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StackTimer-Prefix.pch"; sourceTree = "<group>"; };
-		26E8FF19157CF2DF007089DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		26E8FF1B157CF2DF007089DB /* StackTimerDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackTimerDocument.h; sourceTree = "<group>"; };
-		26E8FF1C157CF2DF007089DB /* StackTimerDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackTimerDocument.m; sourceTree = "<group>"; };
-		26E8FF1F157CF2DF007089DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/StackTimerDocument.xib; sourceTree = "<group>"; };
-		26E8FF25157CF2DF007089DB /* StackTimerDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StackTimerDocument.xcdatamodel; sourceTree = "<group>"; };
-		26E8FF2C157CF2DF007089DB /* StackTimerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackTimerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		26E8FF2D157CF2DF007089DB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		26E8FF34157CF2DF007089DB /* StackTimerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StackTimerTests-Info.plist"; sourceTree = "<group>"; };
-		26E8FF36157CF2DF007089DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		26E8FF38157CF2DF007089DB /* StackTimerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackTimerTests.h; sourceTree = "<group>"; };
-		26E8FF39157CF2DF007089DB /* StackTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackTimerTests.m; sourceTree = "<group>"; };
-		26E90F40157FCB2C003DEE36 /* stackTimer.bmml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stackTimer.bmml; sourceTree = "<group>"; };
-		26E90F44157FCF30003DEE36 /* NSWindow+canBecomeKeyWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSWindow+canBecomeKeyWindow.h"; path = "../NSWindow+canBecomeKeyWindow.h"; sourceTree = "<group>"; };
-		26E90F45157FCF30003DEE36 /* NSWindow+canBecomeKeyWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSWindow+canBecomeKeyWindow.m"; path = "../NSWindow+canBecomeKeyWindow.m"; sourceTree = "<group>"; };
-		26E90F591580F83E003DEE36 /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
-		26E90F5A1580F83E003DEE36 /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
+		262F719D1582B43200F6F99C /* StackTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		262F71A11582B43200F6F99C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		262F71A41582B43200F6F99C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		262F71A51582B43200F6F99C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		262F71A61582B43200F6F99C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		262F71A91582B43200F6F99C /* StackTimer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StackTimer-Info.plist"; sourceTree = "<group>"; };
+		262F71AB1582B43200F6F99C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		262F71AD1582B43200F6F99C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		262F71AF1582B43200F6F99C /* StackTimer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StackTimer-Prefix.pch"; sourceTree = "<group>"; };
+		262F71B11582B43200F6F99C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		262F71B31582B43200F6F99C /* StackTimerDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackTimerDocument.h; sourceTree = "<group>"; };
+		262F71B41582B43200F6F99C /* StackTimerDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackTimerDocument.m; sourceTree = "<group>"; };
+		262F71B71582B43200F6F99C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/StackTimerDocument.xib; sourceTree = "<group>"; };
+		262F71BA1582B43200F6F99C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		262F71BD1582B43200F6F99C /* StackTimerDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StackTimerDocument.xcdatamodel; sourceTree = "<group>"; };
+		262F71C41582B43200F6F99C /* StackTimerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackTimerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		262F71C51582B43200F6F99C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		262F71CC1582B43200F6F99C /* StackTimerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StackTimerTests-Info.plist"; sourceTree = "<group>"; };
+		262F71CE1582B43200F6F99C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		262F71D01582B43200F6F99C /* StackTimerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackTimerTests.h; sourceTree = "<group>"; };
+		262F71D11582B43300F6F99C /* StackTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackTimerTests.m; sourceTree = "<group>"; };
+		262F71DB1582B50F00F6F99C /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
+		262F71DC1582B50F00F6F99C /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
+		262F71DE1582B62500F6F99C /* NSWindow+canBecomeKeyWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindow+canBecomeKeyWindow.h"; sourceTree = "<group>"; };
+		262F71DF1582B62500F6F99C /* NSWindow+canBecomeKeyWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWindow+canBecomeKeyWindow.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		26E8FF02157CF2DF007089DB /* Frameworks */ = {
+		262F719A1582B43200F6F99C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26E8FF0A157CF2DF007089DB /* Cocoa.framework in Frameworks */,
+				262F71A21582B43200F6F99C /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		26E8FF28157CF2DF007089DB /* Frameworks */ = {
+		262F71C01582B43200F6F99C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26E8FF2E157CF2DF007089DB /* SenTestingKit.framework in Frameworks */,
-				26E8FF2F157CF2DF007089DB /* Cocoa.framework in Frameworks */,
+				262F71C61582B43200F6F99C /* SenTestingKit.framework in Frameworks */,
+				262F71C71582B43200F6F99C /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		26E8FEFA157CF2DE007089DB = {
+		262F71921582B43200F6F99C = {
 			isa = PBXGroup;
 			children = (
-				26E8FF0F157CF2DF007089DB /* StackTimer */,
-				26E8FF32157CF2DF007089DB /* StackTimerTests */,
-				26E8FF08157CF2DF007089DB /* Frameworks */,
-				26E8FF06157CF2DF007089DB /* Products */,
+				262F71A71582B43200F6F99C /* StackTimer */,
+				262F71CA1582B43200F6F99C /* StackTimerTests */,
+				262F71A01582B43200F6F99C /* Frameworks */,
+				262F719E1582B43200F6F99C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		26E8FF06157CF2DF007089DB /* Products */ = {
+		262F719E1582B43200F6F99C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				26E8FF05157CF2DF007089DB /* StackTimer.app */,
-				26E8FF2C157CF2DF007089DB /* StackTimerTests.octest */,
+				262F719D1582B43200F6F99C /* StackTimer.app */,
+				262F71C41582B43200F6F99C /* StackTimerTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		26E8FF08157CF2DF007089DB /* Frameworks */ = {
+		262F71A01582B43200F6F99C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				26E8FF09157CF2DF007089DB /* Cocoa.framework */,
-				26E8FF2D157CF2DF007089DB /* SenTestingKit.framework */,
-				26E8FF0B157CF2DF007089DB /* Other Frameworks */,
+				262F71A11582B43200F6F99C /* Cocoa.framework */,
+				262F71C51582B43200F6F99C /* SenTestingKit.framework */,
+				262F71A31582B43200F6F99C /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		26E8FF0B157CF2DF007089DB /* Other Frameworks */ = {
+		262F71A31582B43200F6F99C /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				26E8FF0C157CF2DF007089DB /* AppKit.framework */,
-				26E8FF0D157CF2DF007089DB /* CoreData.framework */,
-				26E8FF0E157CF2DF007089DB /* Foundation.framework */,
+				262F71A41582B43200F6F99C /* AppKit.framework */,
+				262F71A51582B43200F6F99C /* CoreData.framework */,
+				262F71A61582B43200F6F99C /* Foundation.framework */,
 			);
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		26E8FF0F157CF2DF007089DB /* StackTimer */ = {
+		262F71A71582B43200F6F99C /* StackTimer */ = {
 			isa = PBXGroup;
 			children = (
-				26E90F44157FCF30003DEE36 /* NSWindow+canBecomeKeyWindow.h */,
-				26E90F45157FCF30003DEE36 /* NSWindow+canBecomeKeyWindow.m */,
-				26E8FF1B157CF2DF007089DB /* StackTimerDocument.h */,
-				26E8FF1C157CF2DF007089DB /* StackTimerDocument.m */,
-				26E90F591580F83E003DEE36 /* Task.h */,
-				26E90F5A1580F83E003DEE36 /* Task.m */,
-				26E8FF1E157CF2DF007089DB /* StackTimerDocument.xib */,
-				26E8FF24157CF2DF007089DB /* StackTimerDocument.xcdatamodeld */,
-				26E8FF10157CF2DF007089DB /* Supporting Files */,
+				262F71DE1582B62500F6F99C /* NSWindow+canBecomeKeyWindow.h */,
+				262F71DF1582B62500F6F99C /* NSWindow+canBecomeKeyWindow.m */,
+				262F71B31582B43200F6F99C /* StackTimerDocument.h */,
+				262F71B41582B43200F6F99C /* StackTimerDocument.m */,
+				262F71B61582B43200F6F99C /* StackTimerDocument.xib */,
+				262F71B91582B43200F6F99C /* MainMenu.xib */,
+				262F71BC1582B43200F6F99C /* StackTimerDocument.xcdatamodeld */,
+				262F71DB1582B50F00F6F99C /* Task.h */,
+				262F71DC1582B50F00F6F99C /* Task.m */,
+				262F71A81582B43200F6F99C /* Supporting Files */,
 			);
 			path = StackTimer;
 			sourceTree = "<group>";
 		};
-		26E8FF10157CF2DF007089DB /* Supporting Files */ = {
+		262F71A81582B43200F6F99C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				26E90F40157FCB2C003DEE36 /* stackTimer.bmml */,
-				26E8FF11157CF2DF007089DB /* StackTimer-Info.plist */,
-				26E8FF12157CF2DF007089DB /* InfoPlist.strings */,
-				26E8FF15157CF2DF007089DB /* main.m */,
-				26E8FF17157CF2DF007089DB /* StackTimer-Prefix.pch */,
-				26E8FF18157CF2DF007089DB /* Credits.rtf */,
+				262F71A91582B43200F6F99C /* StackTimer-Info.plist */,
+				262F71AA1582B43200F6F99C /* InfoPlist.strings */,
+				262F71AD1582B43200F6F99C /* main.m */,
+				262F71AF1582B43200F6F99C /* StackTimer-Prefix.pch */,
+				262F71B01582B43200F6F99C /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		26E8FF32157CF2DF007089DB /* StackTimerTests */ = {
+		262F71CA1582B43200F6F99C /* StackTimerTests */ = {
 			isa = PBXGroup;
 			children = (
-				26E8FF38157CF2DF007089DB /* StackTimerTests.h */,
-				26E8FF39157CF2DF007089DB /* StackTimerTests.m */,
-				26E8FF33157CF2DF007089DB /* Supporting Files */,
+				262F71D01582B43200F6F99C /* StackTimerTests.h */,
+				262F71D11582B43300F6F99C /* StackTimerTests.m */,
+				262F71CB1582B43200F6F99C /* Supporting Files */,
 			);
 			path = StackTimerTests;
 			sourceTree = "<group>";
 		};
-		26E8FF33157CF2DF007089DB /* Supporting Files */ = {
+		262F71CB1582B43200F6F99C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				26E8FF34157CF2DF007089DB /* StackTimerTests-Info.plist */,
-				26E8FF35157CF2DF007089DB /* InfoPlist.strings */,
+				262F71CC1582B43200F6F99C /* StackTimerTests-Info.plist */,
+				262F71CD1582B43200F6F99C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -172,13 +172,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		26E8FF04157CF2DF007089DB /* StackTimer */ = {
+		262F719C1582B43200F6F99C /* StackTimer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 26E8FF3D157CF2DF007089DB /* Build configuration list for PBXNativeTarget "StackTimer" */;
+			buildConfigurationList = 262F71D51582B43300F6F99C /* Build configuration list for PBXNativeTarget "StackTimer" */;
 			buildPhases = (
-				26E8FF01157CF2DF007089DB /* Sources */,
-				26E8FF02157CF2DF007089DB /* Frameworks */,
-				26E8FF03157CF2DF007089DB /* Resources */,
+				262F71991582B43200F6F99C /* Sources */,
+				262F719A1582B43200F6F99C /* Frameworks */,
+				262F719B1582B43200F6F99C /* Resources */,
 			);
 			buildRules = (
 			);
@@ -186,79 +186,79 @@
 			);
 			name = StackTimer;
 			productName = StackTimer;
-			productReference = 26E8FF05157CF2DF007089DB /* StackTimer.app */;
+			productReference = 262F719D1582B43200F6F99C /* StackTimer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		26E8FF2B157CF2DF007089DB /* StackTimerTests */ = {
+		262F71C31582B43200F6F99C /* StackTimerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 26E8FF40157CF2DF007089DB /* Build configuration list for PBXNativeTarget "StackTimerTests" */;
+			buildConfigurationList = 262F71D81582B43300F6F99C /* Build configuration list for PBXNativeTarget "StackTimerTests" */;
 			buildPhases = (
-				26E8FF27157CF2DF007089DB /* Sources */,
-				26E8FF28157CF2DF007089DB /* Frameworks */,
-				26E8FF29157CF2DF007089DB /* Resources */,
-				26E8FF2A157CF2DF007089DB /* ShellScript */,
+				262F71BF1582B43200F6F99C /* Sources */,
+				262F71C01582B43200F6F99C /* Frameworks */,
+				262F71C11582B43200F6F99C /* Resources */,
+				262F71C21582B43200F6F99C /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				26E8FF31157CF2DF007089DB /* PBXTargetDependency */,
+				262F71C91582B43200F6F99C /* PBXTargetDependency */,
 			);
 			name = StackTimerTests;
 			productName = StackTimerTests;
-			productReference = 26E8FF2C157CF2DF007089DB /* StackTimerTests.octest */;
+			productReference = 262F71C41582B43200F6F99C /* StackTimerTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		26E8FEFC157CF2DE007089DB /* Project object */ = {
+		262F71941582B43200F6F99C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = StackTimer;
 				LastUpgradeCheck = 0430;
 			};
-			buildConfigurationList = 26E8FEFF157CF2DE007089DB /* Build configuration list for PBXProject "StackTimer" */;
+			buildConfigurationList = 262F71971582B43200F6F99C /* Build configuration list for PBXProject "StackTimer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 26E8FEFA157CF2DE007089DB;
-			productRefGroup = 26E8FF06157CF2DF007089DB /* Products */;
+			mainGroup = 262F71921582B43200F6F99C;
+			productRefGroup = 262F719E1582B43200F6F99C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				26E8FF04157CF2DF007089DB /* StackTimer */,
-				26E8FF2B157CF2DF007089DB /* StackTimerTests */,
+				262F719C1582B43200F6F99C /* StackTimer */,
+				262F71C31582B43200F6F99C /* StackTimerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		26E8FF03157CF2DF007089DB /* Resources */ = {
+		262F719B1582B43200F6F99C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26E8FF14157CF2DF007089DB /* InfoPlist.strings in Resources */,
-				26E8FF1A157CF2DF007089DB /* Credits.rtf in Resources */,
-				26E8FF20157CF2DF007089DB /* StackTimerDocument.xib in Resources */,
-				26E90F41157FCB2C003DEE36 /* stackTimer.bmml in Resources */,
+				262F71AC1582B43200F6F99C /* InfoPlist.strings in Resources */,
+				262F71B21582B43200F6F99C /* Credits.rtf in Resources */,
+				262F71B81582B43200F6F99C /* StackTimerDocument.xib in Resources */,
+				262F71BB1582B43200F6F99C /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		26E8FF29157CF2DF007089DB /* Resources */ = {
+		262F71C11582B43200F6F99C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26E8FF37157CF2DF007089DB /* InfoPlist.strings in Resources */,
+				262F71CF1582B43200F6F99C /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		26E8FF2A157CF2DF007089DB /* ShellScript */ = {
+		262F71C21582B43200F6F99C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -274,65 +274,73 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		26E8FF01157CF2DF007089DB /* Sources */ = {
+		262F71991582B43200F6F99C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26E8FF16157CF2DF007089DB /* main.m in Sources */,
-				26E8FF1D157CF2DF007089DB /* StackTimerDocument.m in Sources */,
-				26E8FF26157CF2DF007089DB /* StackTimerDocument.xcdatamodeld in Sources */,
-				26E90F46157FCF30003DEE36 /* NSWindow+canBecomeKeyWindow.m in Sources */,
-				26E90F5B1580F83E003DEE36 /* Task.m in Sources */,
+				262F71AE1582B43200F6F99C /* main.m in Sources */,
+				262F71B51582B43200F6F99C /* StackTimerDocument.m in Sources */,
+				262F71BE1582B43200F6F99C /* StackTimerDocument.xcdatamodeld in Sources */,
+				262F71DD1582B50F00F6F99C /* Task.m in Sources */,
+				262F71E01582B62500F6F99C /* NSWindow+canBecomeKeyWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		26E8FF27157CF2DF007089DB /* Sources */ = {
+		262F71BF1582B43200F6F99C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26E8FF3A157CF2DF007089DB /* StackTimerTests.m in Sources */,
+				262F71D21582B43300F6F99C /* StackTimerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		26E8FF31157CF2DF007089DB /* PBXTargetDependency */ = {
+		262F71C91582B43200F6F99C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 26E8FF04157CF2DF007089DB /* StackTimer */;
-			targetProxy = 26E8FF30157CF2DF007089DB /* PBXContainerItemProxy */;
+			target = 262F719C1582B43200F6F99C /* StackTimer */;
+			targetProxy = 262F71C81582B43200F6F99C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		26E8FF12157CF2DF007089DB /* InfoPlist.strings */ = {
+		262F71AA1582B43200F6F99C /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				26E8FF13157CF2DF007089DB /* en */,
+				262F71AB1582B43200F6F99C /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		26E8FF18157CF2DF007089DB /* Credits.rtf */ = {
+		262F71B01582B43200F6F99C /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (
-				26E8FF19157CF2DF007089DB /* en */,
+				262F71B11582B43200F6F99C /* en */,
 			);
 			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
-		26E8FF1E157CF2DF007089DB /* StackTimerDocument.xib */ = {
+		262F71B61582B43200F6F99C /* StackTimerDocument.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				26E8FF1F157CF2DF007089DB /* en */,
+				262F71B71582B43200F6F99C /* en */,
 			);
 			name = StackTimerDocument.xib;
 			sourceTree = "<group>";
 		};
-		26E8FF35157CF2DF007089DB /* InfoPlist.strings */ = {
+		262F71B91582B43200F6F99C /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				26E8FF36157CF2DF007089DB /* en */,
+				262F71BA1582B43200F6F99C /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		262F71CD1582B43200F6F99C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				262F71CE1582B43200F6F99C /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -340,7 +348,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		26E8FF3B157CF2DF007089DB /* Debug */ = {
+		262F71D31582B43300F6F99C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -367,7 +375,7 @@
 			};
 			name = Debug;
 		};
-		26E8FF3C157CF2DF007089DB /* Release */ = {
+		262F71D41582B43300F6F99C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -387,7 +395,7 @@
 			};
 			name = Release;
 		};
-		26E8FF3E157CF2DF007089DB /* Debug */ = {
+		262F71D61582B43300F6F99C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -398,7 +406,7 @@
 			};
 			name = Debug;
 		};
-		26E8FF3F157CF2DF007089DB /* Release */ = {
+		262F71D71582B43300F6F99C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -409,7 +417,7 @@
 			};
 			name = Release;
 		};
-		26E8FF41157CF2DF007089DB /* Debug */ = {
+		262F71D91582B43300F6F99C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StackTimer.app/Contents/MacOS/StackTimer";
@@ -423,7 +431,7 @@
 			};
 			name = Debug;
 		};
-		26E8FF42157CF2DF007089DB /* Release */ = {
+		262F71DA1582B43300F6F99C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StackTimer.app/Contents/MacOS/StackTimer";
@@ -440,47 +448,45 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		26E8FEFF157CF2DE007089DB /* Build configuration list for PBXProject "StackTimer" */ = {
+		262F71971582B43200F6F99C /* Build configuration list for PBXProject "StackTimer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				26E8FF3B157CF2DF007089DB /* Debug */,
-				26E8FF3C157CF2DF007089DB /* Release */,
+				262F71D31582B43300F6F99C /* Debug */,
+				262F71D41582B43300F6F99C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		26E8FF3D157CF2DF007089DB /* Build configuration list for PBXNativeTarget "StackTimer" */ = {
+		262F71D51582B43300F6F99C /* Build configuration list for PBXNativeTarget "StackTimer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				26E8FF3E157CF2DF007089DB /* Debug */,
-				26E8FF3F157CF2DF007089DB /* Release */,
+				262F71D61582B43300F6F99C /* Debug */,
+				262F71D71582B43300F6F99C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		26E8FF40157CF2DF007089DB /* Build configuration list for PBXNativeTarget "StackTimerTests" */ = {
+		262F71D81582B43300F6F99C /* Build configuration list for PBXNativeTarget "StackTimerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				26E8FF41157CF2DF007089DB /* Debug */,
-				26E8FF42157CF2DF007089DB /* Release */,
+				262F71D91582B43300F6F99C /* Debug */,
+				262F71DA1582B43300F6F99C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		26E8FF24157CF2DF007089DB /* StackTimerDocument.xcdatamodeld */ = {
+		262F71BC1582B43200F6F99C /* StackTimerDocument.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				26E8FF25157CF2DF007089DB /* StackTimerDocument.xcdatamodel */,
+				262F71BD1582B43200F6F99C /* StackTimerDocument.xcdatamodel */,
 			);
-			currentVersion = 26E8FF25157CF2DF007089DB /* StackTimerDocument.xcdatamodel */;
+			currentVersion = 262F71BD1582B43200F6F99C /* StackTimerDocument.xcdatamodel */;
 			path = StackTimerDocument.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 26E8FEFC157CF2DE007089DB /* Project object */;
+	rootObject = 262F71941582B43200F6F99C /* Project object */;
 }

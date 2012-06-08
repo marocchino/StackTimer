@@ -7,9 +7,9 @@
         <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="children" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Task" inverseName="parent" inverseEntity="Task" syncable="YES"/>
-        <relationship name="parent" optional="YES" minCount="1" maxCount="1" deletionRule="Deny" destinationEntity="Task" inverseName="children" inverseEntity="Task" syncable="YES"/>
+        <relationship name="parent" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Task" inverseName="children" inverseEntity="Task" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Task" positionX="-747" positionY="-1377" width="128" height="150"/>
+        <element name="Task" positionX="160" positionY="192" width="128" height="150"/>
     </elements>
 </model>

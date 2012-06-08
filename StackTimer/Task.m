@@ -2,7 +2,7 @@
 //  Task.m
 //  StackTimer
 //
-//  Created by Taewon Shim on 6/7/12.
+//  Created by Taewon Shim on 6/9/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
@@ -12,11 +12,11 @@
 
 @implementation Task
 
-@dynamic title;
-@dynamic startedAt;
-@dynamic endedAt;
-@dynamic status;
 @dynamic depth;
+@dynamic endedAt;
+@dynamic startedAt;
+@dynamic status;
+@dynamic title;
 @dynamic parent;
 @dynamic children;
 

@@ -2,7 +2,7 @@
 //  Task.h
 //  StackTimer
 //
-//  Created by Taewon Shim on 6/7/12.
+//  Created by Taewon Shim on 6/9/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
@@ -13,11 +13,11 @@
 
 @interface Task : NSManagedObject
 
-@property (nonatomic, retain) NSString * title;
-@property (nonatomic, retain) NSDate * startedAt;
-@property (nonatomic, retain) NSDate * endedAt;
-@property (nonatomic, retain) NSNumber * status;
 @property (nonatomic, retain) NSNumber * depth;
+@property (nonatomic, retain) NSDate * endedAt;
+@property (nonatomic, retain) NSDate * startedAt;
+@property (nonatomic, retain) NSNumber * status;
+@property (nonatomic, retain) NSString * title;
 @property (nonatomic, retain) Task *parent;
 @property (nonatomic, retain) NSSet *children;
 @end
