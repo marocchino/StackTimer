@@ -29,7 +29,7 @@
 - (void) finish{
     self.status = [NSNumber numberWithInt:0];
 }
-- (void) cancle{
+- (void) cancel{
     self.status = [NSNumber numberWithInt:-1];
 }
 - (NSString *) titleWithInterval{

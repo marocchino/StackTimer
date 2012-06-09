@@ -157,6 +157,7 @@
     if (![[self managedObjectContext] save:&error]) {
         NSLog(@"%@",[error localizedDescription]);
     } else {
+        isMenuletVisible = NO;
         [formPopover close];
     }
 }
@@ -164,7 +165,7 @@
 - (IBAction)cancleTask:(id)sender {
     NSError *error;
     Task *task = currentTask;
-    [task cancle];
+    [task cancel];
     task.endedAt = [NSDate date];
     if ([task parent]) {
         [self setCurrentTask:[task parent]];
@@ -175,6 +176,7 @@
     if (![[self managedObjectContext] save:&error]) {
         NSLog(@"%@",[error localizedDescription]);
     } else {
+        isMenuletVisible = NO;
         [formPopover close];
     }
 }

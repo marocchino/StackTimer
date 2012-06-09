@@ -27,7 +27,7 @@
 - (void) start;
 - (void) pending;
 - (void) finish;
-- (void) cancle;
+- (void) cancel;
 
 - (NSString *) titleWithInterval;
 - (void)addChildrenObject:(Task *)value;
