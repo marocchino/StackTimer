@@ -7,12 +7,13 @@
 //
 
 #import "StackTimerDocument.h"
-#import "Task.h"
+
 
 @implementation StackTimerDocument
 @synthesize formPopover;
-@synthesize currentWorkField;
-@synthesize currentWorkLabel;
+@synthesize titleInputField;
+@synthesize currentTitleLabel;
+
 - (id)init
 {
     self = [super init];
@@ -24,17 +25,28 @@
     }
     return self;
 }
-- (void)awakeFromNib
+- (void)initCurrentTask
 {
-    [self initMenulet];
-    
-    NSError *error;
+    NSError *error = nil;
     NSFetchRequest* fetchRequest = [NSFetchRequest new];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Task" inManagedObjectContext:[self managedObjectContext]];
     [fetchRequest setEntity:entity];
+    fetchRequest.predicate = [NSPredicate predicateWithFormat:@"status == %d", 1];
+    NSMutableArray *tasks = [[[self managedObjectContext] executeFetchRequest:fetchRequest error:&error] mutableCopy];
+    NSLog(@"%@", tasks);
+    if ([tasks lastObject]) {
+        NSLog(@"success");
+        [self setCurrentTask:[tasks lastObject]];
+    } else {
+        [self setCurrentTask:nil];
+    }
+}
+
+- (void)awakeFromNib
+{
+    [self initMenulet];
+    [self initCurrentTask];
     
-    NSMutableArray *entities = [[[self managedObjectContext] executeFetchRequest:fetchRequest error:&error] mutableCopy];
-    NSLog(@"%@", entities);
 }
 
 - (NSString *)windowNibName
@@ -56,34 +68,63 @@
 }
 
 - (IBAction)createTask:(id)sender {
-    NSString *title = [currentWorkField stringValue];
+    NSString *title = [titleInputField stringValue];
     NSError *error;
     Task *task = (Task*) [NSEntityDescription insertNewObjectForEntityForName:@"Task" inManagedObjectContext:[self managedObjectContext]];
     
     task.title = title;
     task.startedAt = [NSDate date];
+    if (currentTask) {
+        task.parent = currentTask;
+        [currentTask pending];
+    }
+    [task start];
     
     if (![[self managedObjectContext] save:&error]) {
         NSLog(@"%@",[error localizedDescription]);
     } else {
-        NSLog(@"success");
+        [self setCurrentTask:task];
+        [titleInputField setStringValue:@""];
+        [formPopover close];
     }
 }
 
+- (void)advanceTimer:(NSTimer *)timer
+{
+    if (currentTask) {
+        [self displayTitle];
+    }
+}
+
+- (void)setCurrentTask:(Task *)task{
+    currentTask = task;
+    [self displayTitle];
+    NSTimer *countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self     selector:@selector(advanceTimer:) userInfo:nil repeats:YES];
+    NSRunLoop *runLoop = [NSRunLoop currentRunLoop];
+    [runLoop addTimer:countdownTimer forMode:NSDefaultRunLoopMode];
+}
+- (void) displayTitle{
+    if (currentTask) {
+        [currentTitleLabel setStringValue:currentTask.titleWithInterval];
+        [statusItem setTitle:currentTask.titleWithInterval];
+    } else {
+        [statusItem setTitle:@"StackTimer"];
+    }
+}
 - (void) initMenulet {
     isMenuletVisible = NO;
     statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
-    [statusItem setTitle:@"Status"];
+    [statusItem setTitle:@"StackTimer"];
     [statusItem setHighlightMode:YES];
     [statusItem setTarget:self];
     [statusItem setAction:@selector(showMenulet:)];
 }
 
 - (IBAction)speak:(id)sender {
-    NSString *string = [currentWorkField stringValue];
+    NSString *string = [titleInputField stringValue];
     // Is the string zero-length?
     if ([string length] == 0) {
-        NSLog(@"string from %@ is of zero-length", currentWorkField);
+        NSLog(@"string from %@ is of zero-length", titleInputField);
         return; }
     [_speechSynth startSpeakingString:string];
 }
@@ -100,5 +141,41 @@
     } else {
         [formPopover close];
     };
+}
+
+- (IBAction)completeTask:(id)sender {
+    NSError *error;
+    Task *task = currentTask;
+    [task finish];
+    task.endedAt = [NSDate date];
+    if ([task parent]) {
+        [self setCurrentTask:[task parent]];
+        [currentTask start];
+    } else {
+        [self setCurrentTask:nil];
+    }
+    if (![[self managedObjectContext] save:&error]) {
+        NSLog(@"%@",[error localizedDescription]);
+    } else {
+        [formPopover close];
+    }
+}
+
+- (IBAction)cancleTask:(id)sender {
+    NSError *error;
+    Task *task = currentTask;
+    [task cancle];
+    task.endedAt = [NSDate date];
+    if ([task parent]) {
+        [self setCurrentTask:[task parent]];
+        [currentTask start];
+    } else {
+        [self setCurrentTask:nil];
+    }
+    if (![[self managedObjectContext] save:&error]) {
+        NSLog(@"%@",[error localizedDescription]);
+    } else {
+        [formPopover close];
+    }
 }
 @end

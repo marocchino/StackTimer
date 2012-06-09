@@ -464,6 +464,7 @@
 				262F71D71582B43300F6F99C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		262F71D81582B43300F6F99C /* Build configuration list for PBXNativeTarget "StackTimerTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +473,7 @@
 				262F71DA1582B43300F6F99C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

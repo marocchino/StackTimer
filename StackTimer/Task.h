@@ -24,6 +24,12 @@
 
 @interface Task (CoreDataGeneratedAccessors)
 
+- (void) start;
+- (void) pending;
+- (void) finish;
+- (void) cancle;
+
+- (NSString *) titleWithInterval;
 - (void)addChildrenObject:(Task *)value;
 - (void)removeChildrenObject:(Task *)value;
 - (void)addChildren:(NSSet *)values;
