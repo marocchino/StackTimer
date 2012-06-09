@@ -12,9 +12,9 @@
 @interface StackTimerDocument : NSPersistentDocument <NSApplicationDelegate, NSSpeechSynthesizerDelegate>
 {
     NSSpeechSynthesizer *_speechSynth;
-    NSStatusItem* statusItem;
+    NSStatusItem *statusItem;
     BOOL isMenuletVisible;
-    Task* currentTask;
+    Task *currentTask;
     NSTimer *countdownTimer;
     NSRunLoop *runLoop;
 }

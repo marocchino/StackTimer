@@ -18,16 +18,27 @@
 {
     self = [super init];
     if (self) {
-        // Add your subclass-specific initialization here.
+        // init SpeechSynthesizer
         _speechSynth = [[NSSpeechSynthesizer alloc]
                         initWithVoice:nil];
         [_speechSynth setDelegate:self];
+        // init Timer
         countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self     selector:@selector(advanceTimer:) userInfo:nil repeats:YES];
         runLoop = [NSRunLoop currentRunLoop];
         [runLoop addTimer:countdownTimer forMode:NSDefaultRunLoopMode];
     }
     return self;
 }
+
+- (void) initMenulet {
+    isMenuletVisible = NO;
+    statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    [statusItem setTitle:@"StackTimer"];
+    [statusItem setHighlightMode:YES];
+    [statusItem setTarget:self];
+    [statusItem setAction:@selector(toggleMenulet:)];
+}
+
 - (void)initCurrentTask
 {
     NSError *error = nil;
@@ -96,6 +107,7 @@
 {
     if (currentTask) {
         [self displayTitle];
+        [self speakElapsedTime];
     }
 }
 
@@ -103,6 +115,7 @@
     currentTask = task;
     [self displayTitle];
 }
+
 - (void) displayTitle{
     if (currentTask) {
         [currentTitleLabel setStringValue:currentTask.titleWithInterval];
@@ -111,25 +124,13 @@
         [statusItem setTitle:@"StackTimer"];
     }
 }
-- (void) initMenulet {
-    isMenuletVisible = NO;
-    statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
-    [statusItem setTitle:@"StackTimer"];
-    [statusItem setHighlightMode:YES];
-    [statusItem setTarget:self];
-    [statusItem setAction:@selector(toggleMenulet:)];
-}
 
 - (void)speakElapsedTime {
-    NSString *string = [titleInputField stringValue];
-    // Is the string zero-length?
-    if ([string length] == 0) {
-        NSLog(@"string from %@ is of zero-length", titleInputField);
-        return; }
-    [_speechSynth startSpeakingString:string];
+    int min = 30;
+    if (currentTask && [currentTask isTimeToSay: min]) {
+        [_speechSynth startSpeakingString:[NSString stringWithFormat: @"another %d miniutes have passed", min]];
+    }
 }
-
-
 
 - (void)toggleMenulet:(id)sender {
     isMenuletVisible = !isMenuletVisible;

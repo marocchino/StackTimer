@@ -23,15 +23,27 @@
 - (void) start{
     self.status = [NSNumber numberWithInt:1];
 }
+
 - (void) pending{
     self.status = [NSNumber numberWithInt:2];
 }
+
 - (void) finish{
     self.status = [NSNumber numberWithInt:0];
 }
+
 - (void) cancel{
     self.status = [NSNumber numberWithInt:-1];
 }
+
+- (BOOL) isTimeToSay:(int) min{
+    NSTimeInterval elapsedTime = -[self.startedAt timeIntervalSinceNow];
+    if ((lround(floor(elapsedTime / 60)) % 60 % min == 0) && (lround(floor(elapsedTime)) % 60 == 0)){
+        return YES;
+    }
+    return NO;
+}
+
 - (NSString *) titleWithInterval{
     NSTimeInterval elapsedTime = -[self.startedAt timeIntervalSinceNow];
     NSString *string = [NSString stringWithFormat:@"%02li:%02li:%02li",

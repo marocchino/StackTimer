@@ -30,6 +30,8 @@
 - (void) cancel;
 
 - (NSString *) titleWithInterval;
+- (BOOL) isTimeToSay:(int) min;
+
 - (void)addChildrenObject:(Task *)value;
 - (void)removeChildrenObject:(Task *)value;
 - (void)addChildren:(NSSet *)values;
