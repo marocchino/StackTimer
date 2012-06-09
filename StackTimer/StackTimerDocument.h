@@ -15,16 +15,15 @@
     NSStatusItem* statusItem;
     BOOL isMenuletVisible;
     Task* currentTask;
+    NSTimer *countdownTimer;
+    NSRunLoop *runLoop;
 }
 @property (strong) IBOutlet NSPopover *formPopover;
 @property (weak) IBOutlet NSTextField *titleInputField;
 @property (weak) IBOutlet NSTextField *currentTitleLabel;
 
 - (IBAction)createTask:(id)sender;
-- (IBAction)speak:(id)sender;
-- (IBAction)stopSpeak:(id)sender;
-- (IBAction)showMenulet:(id)sender;
 - (IBAction)completeTask:(id)sender;
-- (IBAction)cancleTask:(id)sender;
+- (IBAction)cancelTask:(id)sender;
 
 @end

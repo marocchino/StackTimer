@@ -22,6 +22,9 @@
         _speechSynth = [[NSSpeechSynthesizer alloc]
                         initWithVoice:nil];
         [_speechSynth setDelegate:self];
+        countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self     selector:@selector(advanceTimer:) userInfo:nil repeats:YES];
+        runLoop = [NSRunLoop currentRunLoop];
+        [runLoop addTimer:countdownTimer forMode:NSDefaultRunLoopMode];
     }
     return self;
 }
@@ -85,7 +88,7 @@
     } else {
         [self setCurrentTask:task];
         [titleInputField setStringValue:@""];
-        [formPopover close];
+        [self toggleMenulet:nil];
     }
 }
 
@@ -99,9 +102,6 @@
 - (void)setCurrentTask:(Task *)task{
     currentTask = task;
     [self displayTitle];
-    NSTimer *countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self     selector:@selector(advanceTimer:) userInfo:nil repeats:YES];
-    NSRunLoop *runLoop = [NSRunLoop currentRunLoop];
-    [runLoop addTimer:countdownTimer forMode:NSDefaultRunLoopMode];
 }
 - (void) displayTitle{
     if (currentTask) {
@@ -117,10 +117,10 @@
     [statusItem setTitle:@"StackTimer"];
     [statusItem setHighlightMode:YES];
     [statusItem setTarget:self];
-    [statusItem setAction:@selector(showMenulet:)];
+    [statusItem setAction:@selector(toggleMenulet:)];
 }
 
-- (IBAction)speak:(id)sender {
+- (void)speakElapsedTime {
     NSString *string = [titleInputField stringValue];
     // Is the string zero-length?
     if ([string length] == 0) {
@@ -129,12 +129,9 @@
     [_speechSynth startSpeakingString:string];
 }
 
-- (IBAction)stopSpeak:(id)sender {
-    [_speechSynth stopSpeaking];
-}
 
 
-- (IBAction)showMenulet:(id)sender {
+- (void)toggleMenulet:(id)sender {
     isMenuletVisible = !isMenuletVisible;
     if (isMenuletVisible) {
         [formPopover showRelativeToRect:[sender bounds] ofView:sender preferredEdge:NSMaxYEdge];
@@ -143,10 +140,14 @@
     };
 }
 
-- (IBAction)completeTask:(id)sender {
+- (void)closeTask:(NSString *)status {
     NSError *error;
     Task *task = currentTask;
-    [task finish];
+    if ([status isEqualToString:@"complete"]) {
+        [task finish];
+    } else {
+        [task cancel];
+    }
     task.endedAt = [NSDate date];
     if ([task parent]) {
         [self setCurrentTask:[task parent]];
@@ -157,27 +158,15 @@
     if (![[self managedObjectContext] save:&error]) {
         NSLog(@"%@",[error localizedDescription]);
     } else {
-        isMenuletVisible = NO;
-        [formPopover close];
+        [self toggleMenulet:nil];
     }
 }
 
-- (IBAction)cancleTask:(id)sender {
-    NSError *error;
-    Task *task = currentTask;
-    [task cancel];
-    task.endedAt = [NSDate date];
-    if ([task parent]) {
-        [self setCurrentTask:[task parent]];
-        [currentTask start];
-    } else {
-        [self setCurrentTask:nil];
-    }
-    if (![[self managedObjectContext] save:&error]) {
-        NSLog(@"%@",[error localizedDescription]);
-    } else {
-        isMenuletVisible = NO;
-        [formPopover close];
-    }
+- (IBAction)completeTask:(id)sender {
+    [self closeTask:@"complete"];
+}
+
+- (IBAction)cancelTask:(id)sender {
+    [self closeTask:@"cancel"];
 }
 @end
