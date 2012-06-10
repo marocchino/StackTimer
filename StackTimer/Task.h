@@ -29,6 +29,7 @@
 - (void) finish;
 - (void) cancel;
 
+- (NSString *) interval;
 - (NSString *) titleWithInterval;
 - (BOOL) isTimeToSay:(int) min;
 

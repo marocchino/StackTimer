@@ -44,13 +44,16 @@
     return NO;
 }
 
-- (NSString *) titleWithInterval{
+- (NSString *) interval {
     NSTimeInterval elapsedTime = -[self.startedAt timeIntervalSinceNow];
-    NSString *string = [NSString stringWithFormat:@"%02li:%02li:%02li",
+    return [NSString stringWithFormat:@"%02li:%02li:%02li",
                         lround(floor(elapsedTime / 3600)) % 100,
                         lround(floor(elapsedTime / 60)) % 60,
                         lround(floor(elapsedTime)) % 60];
-    return [NSString stringWithFormat:@"%@  %@", self.title, string];
+}
+
+- (NSString *) titleWithInterval{
+    return [NSString stringWithFormat:@"%@  %@", self.title, self.interval];
 }
 
 @end

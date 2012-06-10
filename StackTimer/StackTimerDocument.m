@@ -13,6 +13,7 @@
 @synthesize formPopover;
 @synthesize titleInputField;
 @synthesize currentTitleLabel;
+@synthesize spendTimeLabel;
 
 - (id)init
 {
@@ -118,8 +119,9 @@
 
 - (void) displayTitle{
     if (currentTask) {
-        [currentTitleLabel setStringValue:currentTask.titleWithInterval];
+        [currentTitleLabel setStringValue:currentTask.title];
         [statusItem setTitle:currentTask.titleWithInterval];
+        [spendTimeLabel setStringValue:currentTask.interval];
     } else {
         [statusItem setTitle:@"StackTimer"];
     }
@@ -128,7 +130,7 @@
 - (void)speakElapsedTime {
     int min = 30;
     if (currentTask && [currentTask isTimeToSay: min]) {
-        [_speechSynth startSpeakingString:[NSString stringWithFormat: @"another %d miniutes have passed", min]];
+        [_speechSynth startSpeakingString:[NSString stringWithFormat: @"another %d minutes have passed", min]];
     }
 }
 

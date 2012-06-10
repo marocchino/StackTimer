@@ -21,6 +21,7 @@
 @property (strong) IBOutlet NSPopover *formPopover;
 @property (weak) IBOutlet NSTextField *titleInputField;
 @property (weak) IBOutlet NSTextField *currentTitleLabel;
+@property (weak) IBOutlet NSTextField *spendTimeLabel;
 
 - (IBAction)createTask:(id)sender;
 - (IBAction)completeTask:(id)sender;
