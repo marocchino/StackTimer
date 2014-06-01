@@ -15,3 +15,5 @@ Motion::Project::App.setup do |app|
   app.name = 'StackTimer'
   app.info_plist['LSUIElement'] = true
 end
+
+task :"build:simulator" => :"schema:build"

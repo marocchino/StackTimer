@@ -1,7 +1,9 @@
 class AppDelegate
+  include CDQ
   attr_accessor :status_menu
 
   def applicationDidFinishLaunching(notification)
+    cdq.setup
     @app_name = NSBundle.mainBundle.infoDictionary['CFBundleDisplayName']
     @status_menu = NSMenu.new
     @status_item = NSStatusBar.systemStatusBar.statusItemWithLength(NSVariableStatusItemLength).init
@@ -19,15 +21,18 @@ class AppDelegate
   end
 
   def start_timer
-    task = Task.new("test")
+    @current_task = Task.start("test")
+    cdq.save
     @timer = EM.add_periodic_timer 1.0 do
-      @status_item.setTitle(task.display)
+      @status_item.setTitle(@current_task.display)
     end
   end
 
   def stop_timer
     @timer && EM.cancel_timer(@timer)
     @timer = nil
+    @current_task.finish
+    cdq.save
     @status_item.setTitle(@app_name)
   end
 end
