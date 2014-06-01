@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 $:.unshift("/Library/RubyMotion/lib")
 require 'motion/project/template/osx'
+require 'bubble-wrap/reactor'
 
 begin
   require 'bundler'
@@ -10,5 +11,7 @@ end
 
 Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
-  app.name = 'StackTimerMotion'
+  app.version = "0.0.1"
+  app.name = 'StackTimer'
+  app.info_plist['LSUIElement'] = true
 end
