@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		268397BD195532A500B7BDC7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268397BC195532A500B7BDC7 /* main.swift */; };
+		268397BF195532A500B7BDC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268397BE195532A500B7BDC7 /* ViewController.swift */; };
+		268397C1195532A500B7BDC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268397C0195532A500B7BDC7 /* AppDelegate.swift */; };
+		268397C4195532A500B7BDC7 /* StackTimerSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 268397C2195532A500B7BDC7 /* StackTimerSwift.xcdatamodeld */; };
+		268397C6195532A500B7BDC7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268397C5195532A500B7BDC7 /* Images.xcassets */; };
+		268397C9195532A500B7BDC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268397C7195532A500B7BDC7 /* Main.storyboard */; };
+		268397D5195532A500B7BDC7 /* StackTimerSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268397D4195532A500B7BDC7 /* StackTimerSwiftTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		268397CF195532A500B7BDC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 268397AF195532A500B7BDC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 268397B6195532A500B7BDC7;
+			remoteInfo = StackTimerSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		268397B7195532A500B7BDC7 /* StackTimerSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackTimerSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		268397BB195532A500B7BDC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		268397BC195532A500B7BDC7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		268397BE195532A500B7BDC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		268397C0195532A500B7BDC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		268397C3195532A500B7BDC7 /* StackTimerSwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StackTimerSwift.xcdatamodel; sourceTree = "<group>"; };
+		268397C5195532A500B7BDC7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		268397C8195532A500B7BDC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		268397CE195532A500B7BDC7 /* StackTimerSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackTimerSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		268397D3195532A500B7BDC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		268397D4195532A500B7BDC7 /* StackTimerSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTimerSwiftTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		268397B4195532A500B7BDC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268397CB195532A500B7BDC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		268397AE195532A500B7BDC7 = {
+			isa = PBXGroup;
+			children = (
+				268397B9195532A500B7BDC7 /* StackTimerSwift */,
+				268397D1195532A500B7BDC7 /* StackTimerSwiftTests */,
+				268397B8195532A500B7BDC7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		268397B8195532A500B7BDC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				268397B7195532A500B7BDC7 /* StackTimerSwift.app */,
+				268397CE195532A500B7BDC7 /* StackTimerSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		268397B9195532A500B7BDC7 /* StackTimerSwift */ = {
+			isa = PBXGroup;
+			children = (
+				268397BE195532A500B7BDC7 /* ViewController.swift */,
+				268397C0195532A500B7BDC7 /* AppDelegate.swift */,
+				268397C5195532A500B7BDC7 /* Images.xcassets */,
+				268397C7195532A500B7BDC7 /* Main.storyboard */,
+				268397C2195532A500B7BDC7 /* StackTimerSwift.xcdatamodeld */,
+				268397BA195532A500B7BDC7 /* Supporting Files */,
+			);
+			path = StackTimerSwift;
+			sourceTree = "<group>";
+		};
+		268397BA195532A500B7BDC7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				268397BB195532A500B7BDC7 /* Info.plist */,
+				268397BC195532A500B7BDC7 /* main.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		268397D1195532A500B7BDC7 /* StackTimerSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				268397D4195532A500B7BDC7 /* StackTimerSwiftTests.swift */,
+				268397D2195532A500B7BDC7 /* Supporting Files */,
+			);
+			path = StackTimerSwiftTests;
+			sourceTree = "<group>";
+		};
+		268397D2195532A500B7BDC7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				268397D3195532A500B7BDC7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		268397B6195532A500B7BDC7 /* StackTimerSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 268397D8195532A500B7BDC7 /* Build configuration list for PBXNativeTarget "StackTimerSwift" */;
+			buildPhases = (
+				268397B3195532A500B7BDC7 /* Sources */,
+				268397B4195532A500B7BDC7 /* Frameworks */,
+				268397B5195532A500B7BDC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StackTimerSwift;
+			productName = StackTimerSwift;
+			productReference = 268397B7195532A500B7BDC7 /* StackTimerSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		268397CD195532A500B7BDC7 /* StackTimerSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 268397DB195532A500B7BDC7 /* Build configuration list for PBXNativeTarget "StackTimerSwiftTests" */;
+			buildPhases = (
+				268397CA195532A500B7BDC7 /* Sources */,
+				268397CB195532A500B7BDC7 /* Frameworks */,
+				268397CC195532A500B7BDC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				268397D0195532A500B7BDC7 /* PBXTargetDependency */,
+			);
+			name = StackTimerSwiftTests;
+			productName = StackTimerSwiftTests;
+			productReference = 268397CE195532A500B7BDC7 /* StackTimerSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		268397AF195532A500B7BDC7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Tw Shim";
+				TargetAttributes = {
+					268397B6195532A500B7BDC7 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					268397CD195532A500B7BDC7 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 268397B6195532A500B7BDC7;
+					};
+				};
+			};
+			buildConfigurationList = 268397B2195532A500B7BDC7 /* Build configuration list for PBXProject "StackTimerSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 268397AE195532A500B7BDC7;
+			productRefGroup = 268397B8195532A500B7BDC7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				268397B6195532A500B7BDC7 /* StackTimerSwift */,
+				268397CD195532A500B7BDC7 /* StackTimerSwiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		268397B5195532A500B7BDC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268397C6195532A500B7BDC7 /* Images.xcassets in Resources */,
+				268397C9195532A500B7BDC7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268397CC195532A500B7BDC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		268397B3195532A500B7BDC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268397C4195532A500B7BDC7 /* StackTimerSwift.xcdatamodeld in Sources */,
+				268397C1195532A500B7BDC7 /* AppDelegate.swift in Sources */,
+				268397BF195532A500B7BDC7 /* ViewController.swift in Sources */,
+				268397BD195532A500B7BDC7 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268397CA195532A500B7BDC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268397D5195532A500B7BDC7 /* StackTimerSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		268397D0195532A500B7BDC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 268397B6195532A500B7BDC7 /* StackTimerSwift */;
+			targetProxy = 268397CF195532A500B7BDC7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		268397C7195532A500B7BDC7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				268397C8195532A500B7BDC7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		268397D6195532A500B7BDC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		268397D7195532A500B7BDC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		268397D9195532A500B7BDC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = StackTimerSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		268397DA195532A500B7BDC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = StackTimerSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		268397DC195532A500B7BDC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StackTimerSwift.app/Contents/MacOS/StackTimerSwift";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = StackTimerSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		268397DD195532A500B7BDC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StackTimerSwift.app/Contents/MacOS/StackTimerSwift";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = StackTimerSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		268397B2195532A500B7BDC7 /* Build configuration list for PBXProject "StackTimerSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				268397D6195532A500B7BDC7 /* Debug */,
+				268397D7195532A500B7BDC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		268397D8195532A500B7BDC7 /* Build configuration list for PBXNativeTarget "StackTimerSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				268397D9195532A500B7BDC7 /* Debug */,
+				268397DA195532A500B7BDC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		268397DB195532A500B7BDC7 /* Build configuration list for PBXNativeTarget "StackTimerSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				268397DC195532A500B7BDC7 /* Debug */,
+				268397DD195532A500B7BDC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		268397C2195532A500B7BDC7 /* StackTimerSwift.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				268397C3195532A500B7BDC7 /* StackTimerSwift.xcdatamodel */,
+			);
+			currentVersion = 268397C3195532A500B7BDC7 /* StackTimerSwift.xcdatamodel */;
+			path = StackTimerSwift.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 268397AF195532A500B7BDC7 /* Project object */;
+}
