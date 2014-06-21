@@ -14,6 +14,7 @@
 		268397C6195532A500B7BDC7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268397C5195532A500B7BDC7 /* Images.xcassets */; };
 		268397C9195532A500B7BDC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268397C7195532A500B7BDC7 /* Main.storyboard */; };
 		268397D5195532A500B7BDC7 /* StackTimerSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268397D4195532A500B7BDC7 /* StackTimerSwiftTests.swift */; };
+		26F0193F195547DF00281981 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F0193E195547DF00281981 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		268397CE195532A500B7BDC7 /* StackTimerSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackTimerSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		268397D3195532A500B7BDC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		268397D4195532A500B7BDC7 /* StackTimerSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTimerSwiftTests.swift; sourceTree = "<group>"; };
+		26F0193E195547DF00281981 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				268397C7195532A500B7BDC7 /* Main.storyboard */,
 				268397C2195532A500B7BDC7 /* StackTimerSwift.xcdatamodeld */,
 				268397BA195532A500B7BDC7 /* Supporting Files */,
+				26F0193E195547DF00281981 /* Task.swift */,
 			);
 			path = StackTimerSwift;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			files = (
 				268397C4195532A500B7BDC7 /* StackTimerSwift.xcdatamodeld in Sources */,
 				268397C1195532A500B7BDC7 /* AppDelegate.swift in Sources */,
+				26F0193F195547DF00281981 /* Task.swift in Sources */,
 				268397BF195532A500B7BDC7 /* ViewController.swift in Sources */,
 				268397BD195532A500B7BDC7 /* main.swift in Sources */,
 			);
@@ -407,6 +411,7 @@
 				268397DA195532A500B7BDC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		268397DB195532A500B7BDC7 /* Build configuration list for PBXNativeTarget "StackTimerSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +420,7 @@
 				268397DD195532A500B7BDC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
