@@ -18,4 +18,11 @@ class Task: NSManagedObject {
         self.finished = true
         self.finishedAt = NSDate.date()
     }
+    func interval() -> NSString {
+        var elapsedTime : NSTimeInterval = -self.startedAt.timeIntervalSinceNow
+        return NSString(format: "%02li:%02li:%02li",
+            lround(floor(elapsedTime / 3600)) % 100,
+            lround(floor(elapsedTime / 60)) % 60,
+            lround(floor(elapsedTime)) % 60);
+    }
 }

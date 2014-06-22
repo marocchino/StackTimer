@@ -12,11 +12,25 @@ import CoreData
 class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelegate {
     
     var tasks : NSArray = []
+    var timer : NSTimer? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        reload()
     }
+    
+    override func viewDidDisappear() {
+        super.viewDidDisappear()
+        timer!.invalidate()
+        timer = nil
+    }
+    
+    
+    override func viewDidAppear() {
+        super.viewDidAppear()
+        reload()
+        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: tableView, selector: Selector("reloadData"), userInfo: nil, repeats: true)
+    }
+    
 
     @IBOutlet var tableView : NSTableView = nil
     @IBOutlet var titleTextField : NSTextField = nil
@@ -35,7 +49,11 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     
     func tableView(tableView: NSTableView!, objectValueForTableColumn tableColumn: NSTableColumn!, row: Int) -> AnyObject! {
         var task : Task = tasks[row] as Task
-        return task.valueForKey(tableColumn.identifier).description as NSString
+        if (tableColumn.identifier == "interval") {
+            return task.interval()
+        } else {
+            return task.valueForKey(tableColumn.identifier).description as NSString
+        }
     }
     
     @IBAction func startTask(sender : AnyObject) {
